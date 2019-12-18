@@ -10,7 +10,7 @@ public class FixInitiator implements Application {
 
     @Override
     public void onLogon(SessionID sessionID) {
-
+        System.out.println("Logged in");
     }
 
     @Override
