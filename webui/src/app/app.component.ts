@@ -10,6 +10,10 @@ export class AppComponent {
   title = 'webui';
   constructor(private httpClient: HttpClient) {}
   connect() {
-    this.httpClient.get("/api/hello").subscribe(data => console.log(data));
+    this.httpClient.get("/api/connect").subscribe(data => console.log(data));
+  }
+
+  disconnect() {
+    this.httpClient.get("/api/disconnect").subscribe(data => console.log(data));
   }
 }

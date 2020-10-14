@@ -14,4 +14,9 @@ class SessionManagerService {
         System.out.println("Connecting to fix session localhost");
         sessionManager.createSession();
     }
+
+    public void disconnect() {
+        System.out.println("Disconnecting from fix session localhost");
+        sessionManager.disconnectSession();
+    }
 }

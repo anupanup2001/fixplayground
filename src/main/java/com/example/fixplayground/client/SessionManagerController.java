@@ -13,9 +13,15 @@ public class SessionManagerController {
         this.sessionManagerService = sessionManagerService;
     }
 
-    @RequestMapping("/hello")
-    public String helloWorld() {
+    @RequestMapping("/connect")
+    public String connectFix() {
         sessionManagerService.connect();
         return "Hello World";
+    }
+
+    @RequestMapping("/disconnect")
+    public String disconnectFix() {
+        sessionManagerService.disconnect();
+        return "Hello dummy World";
     }
 }
